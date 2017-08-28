@@ -12,3 +12,5 @@ function logCRP() {
 window.addEventListener("load", function(event) {
   logCRP();
 });
+
+<script src="http://www.google-analytics.com/analytics.js"></script>
