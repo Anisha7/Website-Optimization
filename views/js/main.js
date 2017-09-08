@@ -348,7 +348,7 @@ var makeRandomPizza = function() {
     pizza = pizza + ingredientItemizer(selectRandomNonMeat());
   }
 
-  for (var i = 0; i < numberOfCheeses; i++) {
+  for (i = 0; i < numberOfCheeses; i++) {
     pizza = pizza + ingredientItemizer(selectRandomCheese());
   }
 
@@ -468,7 +468,8 @@ var resizePizzas = function(size) {
   console.log("Time to resize pizzas: " + timeToResize[0].duration + "ms");
 };
 
-window.performance.mark("mark_start_generating"); // collect timing data
+window.performance.mark("mark_start_generating"); 
+
 // This for-loop actually creates and appends all of the pizzas when the page loads
 var i=2;
 var pizzasDiv = document.getElementById("randomPizzas");
@@ -543,3 +544,4 @@ document.addEventListener('DOMContentLoaded', function() {
   
   updatePositions();
 });
+
